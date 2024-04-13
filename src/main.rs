@@ -112,7 +112,6 @@ fn main() {
   let five = application(succ.clone(), four.clone());
 
   let add_five = application(application(add.clone(), three.clone()), two.clone());
-  // checker.infer(Default::default(), add_five.clone÷());
   checker.check(Default::default(), add_five.clone(), nat.clone());
 
   let five_normalized = checker.reduce(five.clone());
